@@ -1,7 +1,9 @@
-package com.rex.hwong;
+package com.rex.hwong.ui.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.rex.hwong.R;
 
 public class MainActivity extends AppCompatActivity {
 
