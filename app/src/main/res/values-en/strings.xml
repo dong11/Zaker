@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Zaker</string>
+
+    <string name="update_title">Update available</string>
+    <string name="update_description">The latest version %1$s is available of my app!\nReleaseNote:\n%2$s</string>
+    <string name="update_button">Update now</string>
+
+    <string name="common_cancel">Cancel</string>
+
+</resources>

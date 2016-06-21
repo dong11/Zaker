@@ -1,5 +1,7 @@
 package com.rex.hwong.ui.iView;
 
+import com.rex.hwong.bean.UpdateItem;
+
 /**
  * @author dong {hwongrex@gmail.com}
  * @date 16/6/13
@@ -7,4 +9,5 @@ package com.rex.hwong.ui.iView;
  */
 
 public interface IMain {
+    void showUpdate(UpdateItem updateItem);
 }

@@ -6,5 +6,6 @@ package com.rex.hwong.presenter;
  * @time 下午10:20
  */
 
-public interface IMainPresenter {
+public interface IMainPresenter extends IBasePresenter{
+    void checkUpdate();
 }
