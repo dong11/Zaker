@@ -7,4 +7,13 @@
 
     <string name="common_cancel">取消</string>
 
+    <string name="menu_subscribe">订阅</string>
+    <string name="menu_hotspot">热点</string>
+    <string name="menu_local">本地</string>
+    <string name="menu_fun">玩乐</string>
+    <string name="menu_community">社区</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

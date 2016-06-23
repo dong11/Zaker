@@ -1,15 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context=".ui.activity.MainActivity">
 
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_weight="1"
+        android:layout_height="0dp" />
 
-</RelativeLayout>
+    <RadioGroup
+        android:id="@+id/rg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFF6F6F6">
+
+        <RadioButton
+            android:id="@+id/rb_menu_subscribe"
+            android:padding="7dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@null"
+            android:drawableTop="@drawable/icon_topic_tab"
+            android:gravity="center"
+            android:text="@string/menu_subscribe"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_menu_hotspot"
+            android:padding="7dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@null"
+            android:drawableTop="@drawable/icon_topic_tab"
+            android:gravity="center"
+            android:text="@string/menu_hotspot"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_menu_local"
+            android:padding="7dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@null"
+            android:drawableTop="@drawable/icon_topic_tab"
+            android:gravity="center"
+            android:text="@string/menu_local"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_menu_fun"
+            android:padding="7dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@null"
+            android:drawableTop="@drawable/icon_topic_tab"
+            android:gravity="center"
+            android:text="@string/menu_fun"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_menu_community"
+            android:padding="7dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@null"
+            android:drawableTop="@drawable/icon_topic_tab"
+            android:gravity="center"
+            android:text="@string/menu_community"
+            android:textSize="12sp"/>
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -7,4 +7,10 @@
 
     <string name="common_cancel">Cancel</string>
 
+    <string name="menu_subscribe">subscribe</string>
+    <string name="menu_hotspot">hotspot</string>
+    <string name="menu_local">local</string>
+    <string name="menu_fun">fun</string>
+    <string name="menu_community">community</string>
+
 </resources>
