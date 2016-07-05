@@ -16,8 +16,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     public void setContentView(int layoutResID) {
         super.setContentView(layoutResID);
-
         StatusBarUtil.setColorNoTranslucent(this, 0xFFFF4747);
     }
-
 }

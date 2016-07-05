@@ -10,17 +10,21 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.rex.hwong.R;
+import com.rex.hwong.presenter.ISubscribePresenter;
+import com.rex.hwong.presenter.Impl.SubscribePresenterImpl;
+import com.rex.hwong.ui.iView.ISubscribeFragment;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SubscribeFragment extends Fragment {
+public class SubscribeFragment extends Fragment implements ISubscribeFragment {
+
+    private ISubscribePresenter mISubscribePresenter;
 
 
     public SubscribeFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,7 +37,13 @@ public class SubscribeFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Log.i("123", "create SubscribeFragment");
 
+        mISubscribePresenter = new SubscribePresenterImpl(this);
+        mISubscribePresenter.getSubscribeBanner();
+    }
+
+    @Override
+    public void updateList() {
+        Log.i("123", "::返回获取的数据::");
     }
 }
