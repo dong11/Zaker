@@ -8,7 +8,7 @@ Android 中集成 Ping++ SDK
 
 ## 开始接入
 ### 步骤1：添加相应的依赖到项目中
-<font color='red'>(注：依赖渠道SDK时,可能会和其他第三方SDK有冲突,移除依赖冲突的包就可以.如：[问题二](#issue2)、[问题三](#issue3))</font>
+<font color='red'>(注：依赖渠道SDK时,可能会和其他第三方SDK有冲突,移除依赖冲突的包就可以.如：[问题二](#问题二)、[问题三](#issue3))</font>
 #### 方法一(适用AndroidStudio)：(<font color='red'>推荐</font>) 使用gradle依赖，即在module的build.gradle中设置：
 
 ```java
@@ -395,7 +395,7 @@ Pingpp.DEBUG = true;
     3. 清理微信缓存；
     4. 如果签名包名均正确，仍旧返回 -1 报错，请检查时间戳格式是否有问题或重置微信开放平台的安卓版本的签名包名。
 
-###  <span id = "issue2">问题二：与其他第三方SDK有冲突(如:友盟SDK)</span>
+### 问题二：与其他第三方SDK有冲突(如:友盟SDK)
 - 报错Log:
 
 ```java
@@ -412,7 +412,7 @@ java.util.zip.ZipException: duplicate entry: a/a/a/a.class
     1. 加上混淆过滤的代码(出现a/a/a/a.class的log时)
     2. 删除重复的jar包(可以是第三方SDK中的,也可以是Ping++SDK中的jar包)
 
-### <span id = "issue3">问题三：Ping++和其他第三方SDK(如：高德地图)同时存在，使用gradle导入Ping++, 会导致其他第三方SDK（如：高德地图）找不到so而无法使用</span>
+### 问题三：Ping++和其他第三方SDK(如：高德地图)同时存在，使用gradle导入Ping++, 会导致其他第三方SDK（如：高德地图）找不到so而无法使用
 - 报错原因:
     Ping++ SDK 提供了armeabi、armeabi-v7a 而其他第三方SDK(如：高德地图)提供了armeabi, 当手机是armeabi-v7a的 会去加载armeabi-v7a包下的so文件 这是会报其他第三方SDK(如：高德地图)的so文件找不到 而你上面的代码在打包的时候就只打包了armeabi 所以只会去armeabi包下找 因此不会出现报错 建议使用各种SDK时保持相同的so文件。
 
